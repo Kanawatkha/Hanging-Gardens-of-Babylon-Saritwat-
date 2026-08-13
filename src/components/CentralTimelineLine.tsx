@@ -8,7 +8,7 @@ export const CentralTimelineLine: React.FC = () => {
   useEffect(() => {
     const updateLineHeightSynchronously = () => {
       const mainElement = document.getElementById('main-content');
-      const summaryElement = document.getElementById('summary-section-card');
+      const summaryWrapper = document.getElementById('summary-section-wrapper');
 
       if (mainElement) {
         const rect = mainElement.getBoundingClientRect();
@@ -16,9 +16,10 @@ export const CentralTimelineLine: React.FC = () => {
         const drawnPixels = cursorTopY - rect.top;
 
         let maxPixels = rect.height - 380;
-        if (summaryElement) {
-          const summaryRect = summaryElement.getBoundingClientRect();
-          maxPixels = summaryRect.top - rect.top;
+        if (summaryWrapper) {
+          const wrapperRect = summaryWrapper.getBoundingClientRect();
+          // Stop line precisely at center of docked node dot (top-4 = 16px from wrapper top)
+          maxPixels = wrapperRect.top - rect.top + 16;
         }
 
         const currentCalculated = Math.max(0, Math.min(drawnPixels, maxPixels));

@@ -46,21 +46,21 @@ export const SummarySection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full max-w-4xl mx-auto my-20 px-4 sm:px-6">
+    <section id="summary-section-wrapper" className="relative w-full max-w-4xl mx-auto my-20 px-4 sm:px-6">
       <div
         id="summary-section-card"
         ref={containerRef}
         className="relative rounded-3xl bg-white/90 backdrop-blur-md border border-stone-200 p-6 sm:p-12 shadow-xl text-center opacity-0"
       >
-        {/* Permanent Terminal Node Dot Docked Centered Exactly on Top Border of Summary Card (left-0 on Mobile, center on Desktop) */}
-        <div className="flex absolute top-0 left-0 md:left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 items-center justify-center pointer-events-none">
+        {/* Permanent Terminal Node Dot Positioned Gracefully Lower at top-4 (left-0 on Mobile, center on Desktop) */}
+        <div className="flex absolute top-4 left-0 md:left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 items-center justify-center pointer-events-none">
           <div className="w-5 h-5 rounded-full border-2 border-stone-400 bg-white shadow-md flex items-center justify-center ring-4 ring-stone-400/20">
             <div className="w-2 h-2 rounded-full bg-stone-700" />
           </div>
         </div>
 
         {/* Category Tag */}
-        <div className="summary-anim-item opacity-0 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-stone-100 border border-stone-200 text-stone-600 text-xs font-mono tracking-widest uppercase mb-6">
+        <div className="summary-anim-item opacity-0 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-stone-100 border border-stone-200 text-stone-600 text-xs font-mono tracking-widest uppercase mb-6 pt-2">
           Conclusion & Academic Perspective
         </div>
 
