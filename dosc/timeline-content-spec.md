@@ -1,7 +1,7 @@
 # Timeline Content Specification & Source Mapping
 ## ข้อกำหนดเนื้อหาประจำบล็อก Timeline และการจับคู่แหล่งอ้างอิงประวัติศาสตร์
 
-เอกสารฉบับนี้สรุปเนื้อหาภาษาไทยและภาษาอังกฤษสำหรับใช้แสดงผลในเว็บแอปพลิเคชัน Timeline สวนลอยแห่งบาบิโลน โดยสกัดและอ้างอิงจากบทความประวัติศาสตร์จริงทั้ง 6 บทความในโฟลเดอร์ `docs/`
+เอกสารฉบับนี้สรุปเนื้อหาภาษาไทยและภาษาอังกฤษที่ใช้แสดงผลจริงบนเว็บแอปพลิเคชัน Timeline สวนลอยแห่งบาบิโลน ครอบคลุมทั้งส่วน Hero, เนื้อหา Timeline ทั้ง 9 บล็อก, ส่วนบทสรุป (Summary) และรายการอ้างอิง โดยสกัดและอ้างอิงจากบทความประวัติศาสตร์จริงทั้ง 6 บทความในโฟลเดอร์ `docs/`
 
 ---
 
@@ -9,7 +9,8 @@
 
 * **Main Title (EN):** Hanging Gardens of Babylon
 * **Subtitle (EN):** A Scroll-Driven Comparison of Two Competing Historical Theories
-* **Description (TH):** การเปรียบเทียบเชิงวิชาการระหว่าง 2 ทฤษฎีประวัติศาสตร์ของสวนลอยแห่งบาบิโลน — ทฤษฎีนีเนเวห์ (Nineveh / อัสซีเรีย) และ ทฤษฎีบาบิโลน (Babylon / คลาสสิก) — เรียงลำดับตามเส้นเวลาประวัติศาสตร์จริง
+* **Description / Context Badge (TH):**
+  ร่วมค้นหาความจริงของสิ่งมหัศจรรย์ยุคโบราณเพียงแห่งเดียวที่ไร้หลักฐานในบาบิโลน — ถอดรหัสข้อถกเถียงทางประวัติศาสตร์ระหว่าง **ทฤษฎีนีเนเวห์ (Nineveh)** ที่กล่าวถึงกษัตริย์ Sennacherib กับอภิมหาโครงการทางส่งน้ำ 80 กม. และจารึกอัสซีเรียจริง กับ **ทฤษฎีบาบิโลน (Babylon)** ตำนานสวนสวรรค์เพื่อมเหสี Amytis จากบันทึกคลาสสิกที่ยังไร้ร่องรอยโบราณคดี เรียงลำดับเปรียบเทียบตามเส้นเวลาจริง
 
 ---
 
@@ -21,7 +22,7 @@
 * **Title (EN):** Sennacherib Establishes Nineveh as Capital
 * **Title (TH):** กษัตริย์เซนนาเคอริบสถาปนานีเนเวห์เป็นเมืองหลวงใหม่
 * **Description (TH):** กษัตริย์เซนนาเคอริบ (Sennacherib) แห่งอัสซีเรียเสด็จขึ้นครองราชย์และทรงย้ายเมืองหลวงมายังเมืองนีเนเวห์ (Nineveh) ทรงเริ่มก่อสร้าง "พระราชวังผู้ไร้เทียมทาน" (Palace Without a Rival) พร้อมวางรากฐานเนรมิตสวนสวรรค์จำลองทัศนียภาพอันเขียวขจีของเทือกเขา Amanus
-* **Historical Quote:** *"I planted a great park beside the palace, like that of the Amanus Mountain, with all kinds of herbs and fruit trees..."* — Sennacherib
+* **Historical Quote:** *"I planted a great park beside the palace, like that of the Amanus Mountain, with all kinds of herbs and fruit trees..."* — King Sennacherib of Assyria
 * **Source Reference:** [`dalley-oup-2013.md`](file:///d:/Gosoft_Test/Hanging_Gardens_of_Babylon/docs/dalley-oup-2013.md), [`biblical-archaeology-2014.md`](file:///d:/Gosoft_Test/Hanging_Gardens_of_Babylon/docs/biblical-archaeology-2014.md)
 
 ---
@@ -46,7 +47,7 @@
 
 ---
 
-### 📍 Block 4: c. 668–631 BCE — ภาพสลักหินนูนต่ำสวนสวรรค์
+### 📍 Block 4: c. 668–631 BCE — ภาพสลักหินนูนต่ำสวนสวรรค์ในรัชสมัยแอสเชอร์บานิพาล
 * **Side:** 👈 Left (Nineveh Theory)
 * **Year Display:** c. 668–631 BCE
 * **Title (EN):** Ashurbanipal's Garden Relief Carvings
@@ -66,7 +67,7 @@
 
 ---
 
-### 📍 Block 6: 331 BCE — กองทัพอเล็กซานเดอร์มหาราชและการส่งต่อเรื่องเล่า
+### 📍 Block 6: 331 BCE — กองทัพอเล็กซานเดอร์มหาราชและการส่งต่อเรื่องเล่าสู่ชาวกรีก
 * **Side:** 👈 Left (Nineveh Theory)
 * **Year Display:** 331 BCE
 * **Title (EN):** Alexander the Great Sees Nineveh's Waterworks
@@ -76,13 +77,13 @@
 
 ---
 
-### 📍 Block 7: c. 290 BCE — บันทึกแรกเริ่มเรื่องสวนลอยโดยเบรอสซุส
+### 📍 Block 7: c. 290 BCE — บันทึกแรกเริ่มเรื่องสวนลอยบาบิโลนโดยเบรอสซุส
 * **Side:** 👉 Right (Babylon Theory)
 * **Year Display:** c. 290 BCE
 * **Title (EN):** First Written Account by Berossus of Kos
 * **Title (TH):** บันทึกแรกเริ่มเรื่องสวนลอยบาบิโลนโดยเบรอสซุส
 * **Description (TH):** เบรอสซุส (Berossus) นักบวชชาวบาบิโลน เขียนบันทึกบรรยายว่ากษัตริย์เนบูคัดเนซซาร์ทรงสร้างสวนลอยบนระเบียงหินสูง ซึ่งเป็นบันทึกโบราณชิ้นแรกสุดที่เอ่ยถึงสวนลอย ก่อนจะถูกนักเขียนกรีก-โรมันนำไปอ้างอิงต่อ ทั้งที่จารึกของบาบิโลนเองไม่เคยเอ่ยถึงสวนนี้เลย
-* **Historical Quote:** *"In this palace he erected very high walks, supported by stone pillars; and by planting what was called a pensile paradise..."* — Berossus (quoted by Josephus)
+* **Historical Quote:** *"In this palace he erected very high walks, supported by stone pillars; and by planting what was called a pensile paradise..."* — Berossus of Kos (quoted by Josephus)
 * **Source Reference:** [`cartwright-worldhistory-2018.md`](file:///d:/Gosoft_Test/Hanging_Gardens_of_Babylon/docs/cartwright-worldhistory-2018.md), [`biblical-archaeology-2014.md`](file:///d:/Gosoft_Test/Hanging_Gardens_of_Babylon/docs/biblical-archaeology-2014.md)
 
 ---
@@ -107,21 +108,22 @@
 
 ---
 
-## 3. Closing / Summary Section (ส่วนสรุปและแหล่งอ้างอิงท้าย)
+## 3. Closing / Summary Section (ส่วนสรุปและทัศนะทางวิชาการ)
 
 * **Section Title (EN):** Conclusion & Academic Perspective
 * **Section Title (TH):** บทสรุปและทัศนะทางวิชาการ
 * **Summary Narrative (TH):**
-  สวนลอยแห่งบาบิโลนยังคงเป็นสิ่งมหัศจรรย์ชิ้นเดียวใน 7 สิ่งมหัศจรรย์ของโลกโบราณที่ไม่พบหลักฐานทางโบราณคดีหรือจารึกร่วมสมัยในเมืองบาบิโลนจริง 
-  
-  ข้อสันนิษฐานเรื่องการสับสนชื่อเมืองระหว่าง **นีเนเวห์ ("บาบิโลนใหม่")** กับ **บาบิโลน** และกษัตริย์ **เซนนาเคอริบ** กับ **เนบูคัดเนซซาร์ที่ 2** เปิดมุมมองใหม่ทางประวัติศาสตร์ว่า สวนลอยในตำนานอาจเคยดำรงอยู่อย่างยิ่งใหญ่จริงที่เมืองนีเนเวห์ 
-  
-  เว็บไซต์นี้เสนอบันทึกและหลักฐานของทั้งสองฝั่ง เพื่อให้ผู้เรียนได้คิดวิเคราะห์หลักฐานทางประวัติศาสตร์ด้วยตนเองอย่างเปิดกว้าง
+  1. สวนลอยแห่งบาบิโลนยังคงเป็นสิ่งมหัศจรรย์ชิ้นเดียวใน 7 สิ่งมหัศจรรย์ของโลกโบราณที่ไม่พบหลักฐานทางโบราณคดีหรือจารึกร่วมสมัยในเมืองบาบิโลนจริง
+  2. ข้อสันนิษฐานเรื่องการสับสนชื่อเมืองระหว่าง **นีเนเวห์ ("บาบิโลนใหม่")** กับ **บาบิโลน** และกษัตริย์ **เซนนาเคอริบ** กับ **เนบูคัดเนซซาร์ที่ 2** เปิดมุมมองใหม่ทางประวัติศาสตร์ว่า สวนลอยในตำนานอาจเคยดำรงอยู่อย่างยิ่งใหญ่จริงที่เมืองนีเนเวห์
+  3. สื่อการเรียนรู้นี้เสนอบันทึกและหลักฐานของทั้งสองฝั่ง เพื่อให้ผู้เรียนได้คิดวิเคราะห์หลักฐานทางประวัติศาสตร์ด้วยตนเองอย่างเปิดกว้าง
 
-* **Source Reference List:**
-  1. Dalley, Stephanie. (2013). *The mystery of the Hanging Garden of Babylon*. Oxford University Press Blog.
-  2. Alberge, Dalya. (2013). *Babylon's hanging garden: ancient scripts give clue to missing wonder*. The Guardian.
-  3. Biblical Archaeology Society. (2014). *Hanging Gardens of Babylon … in Assyrian Nineveh*. Bible History Daily.
-  4. PBS Secrets of the Dead. *Q&A with Dr. Stephanie Dalley, Author of Lost Gardens of Babylon*.
-  5. Cartwright, Mark. (2018). *Hanging Gardens of Babylon*. World History Encyclopedia.
-  6. Encyclopædia Britannica. *Hanging Gardens of Babylon*.
+---
+
+## 4. Source Reference List (รายการแหล่งอ้างอิงส่วนท้าย)
+
+1. **Stephanie Dalley (2013)** — *The mystery of the Hanging Garden of Babylon*, Oxford University Press Blog
+2. **Dalya Alberge (2013)** — *Babylon's hanging garden: ancient scripts give clue to missing wonder*, The Guardian
+3. **Biblical Archaeology Society (2014)** — *Hanging Gardens of Babylon … in Assyrian Nineveh*, Bible History Daily
+4. **PBS Secrets of the Dead (2014)** — *Q&A with Dr. Stephanie Dalley, TV Host & Author of "Lost Gardens of Babylon"*, PBS
+5. **Mark Cartwright (2018)** — *Hanging Gardens of Babylon*, World History Encyclopedia
+6. **Encyclopædia Britannica (2024)** — *Hanging Gardens of Babylon*, Encyclopædia Britannica, Inc.
