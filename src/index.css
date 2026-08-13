@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas-bg: #f5f5f5;
+    --text-ink: #0c0a09;
+    --text-muted: #57534e;
+    --border-hairline: rgba(12, 10, 9, 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--canvas-bg);
+    color: var(--text-ink);
+    font-family: 'Kanit', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--canvas-bg);
+    color: var(--text-ink);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'EB Garamond', 'Kanit', Georgia, serif;
+    font-weight: 300;
+  }
+
+  .font-thai-title {
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .font-thai-body {
+    font-family: 'Kanit', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
