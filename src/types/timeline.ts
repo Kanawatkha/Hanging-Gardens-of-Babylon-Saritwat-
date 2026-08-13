@@ -4,10 +4,12 @@ export interface TimelineBlock {
   id: string;
   side: TheorySide;
   yearDisplay: string;
-  yearNumeric: number; // for chronological sorting verification (-705, -700, -689, -668, -605, -331, -290, -100, 1899)
+  yearNumeric: number; // for chronological sorting verification (-705, -700, -689, -668, -605, -331, -290, -100, 1899, 2013)
   titleEN: string;
   titleTH: string;
   descriptionTH: string;
+  imageUrl?: string;
+  imageAlt?: string;
   quote?: {
     text: string;
     author: string;

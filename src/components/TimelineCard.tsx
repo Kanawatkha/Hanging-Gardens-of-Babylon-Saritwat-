@@ -90,29 +90,37 @@ export const TimelineCard: React.FC<TimelineCardProps> = ({ block }) => {
   return (
     <div
       ref={cardRef}
-      className={`relative w-full rounded-2xl bg-white/95 backdrop-blur-md border border-stone-200/90 shadow-lg overflow-hidden hover:shadow-xl opacity-0 ${
+      className={`group relative w-full rounded-2xl bg-white/95 backdrop-blur-md border border-stone-200/90 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 opacity-0 ${
         isLeft ? 'border-l-4 border-l-emerald-600' : 'border-r-4 border-r-amber-600'
       }`}
     >
-      {/* Flush Top Image Placeholder */}
-      <div
-        aria-hidden="true"
-        className="card-anim-item opacity-0 relative w-full h-48 sm:h-60 bg-stone-100 border-b border-stone-200/80 flex flex-col items-center justify-center p-4 overflow-hidden group"
-      >
-        <svg className="absolute inset-0 w-full h-full text-stone-200/80 opacity-70" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor" strokeWidth="0.5" />
-          <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor" strokeWidth="0.5" />
-        </svg>
-
-        <div className="relative z-10 w-12 h-12 rounded-full bg-white/90 border border-stone-300/80 flex items-center justify-center shadow-sm">
-          <svg className="w-6 h-6 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
+      {/* Flush Top Image Section with Smooth Hover Zoom */}
+      {block.imageUrl ? (
+        <div className="card-anim-item opacity-0 relative w-full h-48 sm:h-64 bg-stone-100 overflow-hidden border-b border-stone-200/80">
+          <img
+            src={block.imageUrl}
+            alt={block.imageAlt || block.titleEN}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy"
+          />
+          {/* Subtle Bottom Gradient Edge for Seamless Visual Transition */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 pointer-events-none" />
         </div>
-        <span className="relative z-10 mt-3 text-xs font-mono tracking-widest text-stone-400 uppercase font-medium">
-          [X] Image Placeholder
-        </span>
-      </div>
+      ) : (
+        /* Fallback Placeholder */
+        <div
+          aria-hidden="true"
+          className="card-anim-item opacity-0 relative w-full h-48 sm:h-60 bg-stone-100 border-b border-stone-200/80 flex flex-col items-center justify-center p-4 overflow-hidden"
+        >
+          <svg className="absolute inset-0 w-full h-full text-stone-200/80 opacity-70" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor" strokeWidth="0.5" />
+            <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor" strokeWidth="0.5" />
+          </svg>
+          <span className="relative z-10 text-xs font-mono tracking-widest text-stone-400 uppercase font-medium">
+            Historical Image
+          </span>
+        </div>
+      )}
 
       {/* Card Content Section */}
       <div className="p-6 sm:p-8">
@@ -138,9 +146,11 @@ export const TimelineCard: React.FC<TimelineCardProps> = ({ block }) => {
         </h4>
 
         {/* Thai Paragraph Description */}
-        <p className="card-anim-item opacity-0 font-thai-body text-stone-600 text-sm sm:text-base leading-relaxed font-normal">
-          {block.descriptionTH}
-        </p>
+        <div className="card-anim-item opacity-0 font-thai-body text-stone-600 text-sm sm:text-base leading-relaxed font-normal space-y-3">
+          {block.descriptionTH.split('\n\n').map((paragraph, pIdx) => (
+            <p key={`p-${pIdx}`}>{paragraph}</p>
+          ))}
+        </div>
 
         {/* Optional Historical Quote */}
         {block.quote && (

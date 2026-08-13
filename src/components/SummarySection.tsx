@@ -64,21 +64,37 @@ export const SummarySection: React.FC = () => {
           Conclusion & Academic Perspective
         </div>
 
-        {/* Header */}
-        <h2 className="summary-anim-item opacity-0 font-serif-display text-2xl sm:text-4xl text-stone-900 font-light leading-snug mb-6">
-          บทสรุปและทัศนะทางวิชาการ
+        {/* Header (v2 Spec) */}
+        <h2 className="summary-anim-item opacity-0 font-serif-display text-2xl sm:text-4xl text-stone-900 font-light leading-snug mb-3">
+          Two Theories, One Open Question
         </h2>
+        <h3 className="summary-anim-item opacity-0 font-thai-title text-xl sm:text-2xl text-stone-800 font-medium mb-8">
+          สองทฤษฎี หนึ่งคำถามที่ยังไม่จบ
+        </h3>
 
-        {/* Thai Academic Narrative Paragraphs */}
-        <div className="space-y-4 text-stone-600 text-sm sm:text-lg leading-relaxed max-w-3xl mx-auto font-thai-body text-left sm:text-center">
+        {/* Thai Academic Narrative Paragraphs (v2 Spec) */}
+        <div className="space-y-5 text-stone-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-thai-body text-left">
           <p className="summary-anim-item opacity-0">
-            สวนลอยแห่งบาบิโลนยังคงเป็นสิ่งมหัศจรรย์ชิ้นเดียวใน 7 สิ่งมหัศจรรย์ของโลกโบราณที่ไม่พบหลักฐานทางโบราณคดีหรือจารึกร่วมสมัยในเมืองบาบิโลนจริง
+            <strong className="font-thai-title text-stone-900">ทวนกันอีกครั้ง:</strong> ฝั่งหนึ่งมีจารึกร่วมสมัย ภาพสลักหิน และร่องน้ำยาว 80 กิโลเมตรที่ยังหาได้จริง แต่ชี้ไปที่เมืองที่ไม่มีใครเรียกว่า "บาบิโลน" มาก่อน ส่วนอีกฝั่งมีชื่อที่ทุกคนจำได้ มีตำนานที่เล่าซ้ำมากว่า 2 พันปี แต่ไม่มีจารึกจากเมืองนั้นเองสักแผ่นที่ยืนยัน
           </p>
+
           <p className="summary-anim-item opacity-0">
-            ข้อสันนิษฐานเรื่องการสับสนชื่อเมืองระหว่าง <strong className="font-thai-title text-emerald-800 font-semibold">นีเนเวห์ ("บาบิโลนใหม่")</strong> กับ <strong className="font-thai-title text-amber-800 font-semibold">บาบิโลน</strong> และกษัตริย์ <strong className="font-thai-title text-emerald-800 font-semibold">เซนนาเคอริบ</strong> กับ <strong className="font-thai-title text-amber-800 font-semibold">เนบูคัดเนซซาร์ที่ 2</strong> เปิดมุมมองใหม่ทางประวัติศาสตร์ว่า สวนลอยในตำนานอาจเคยดำรงอยู่อย่างยิ่งใหญ่จริงที่เมืองนีเนเวห์
+            ที่น่าสนใจคือ แม้แต่หลักฐานที่ดูเหมือนจะหนุนฝั่งบาบิโลนที่สุด ก็มีรอยร้าว — เบรอสซุสเป็นชาวบาบิโลนแท้ ๆ ที่เขียนถึงสวนนี้ไว้ตั้งแต่ราว 290 ปีก่อนคริสตกาล แต่สเตฟานี ดัลลีย์ ผู้เสนอทฤษฎีนีเนเวห์ ก็ยอมรับว่าต้องอธิบายข้อมูลของเบรอสซุสให้เข้ากับความสับสนเรื่องชื่อเมืองและชื่อกษัตริย์ให้ได้ ไม่ใช่ทุกคนในวงการเห็นด้วยกับเธอทั้งหมด และนีเนเวห์เองก็ยังถูกขุดค้นสำรวจน้อยกว่าที่ควรจะเป็น ส่วนหนึ่งเพราะสถานการณ์ความไม่สงบในพื้นที่
           </p>
-          <p className="summary-anim-item opacity-0 text-stone-500 text-xs sm:text-base pt-2 italic">
-            สื่อการเรียนรู้นี้เสนอบันทึกและหลักฐานของทั้งสองฝั่ง เพื่อให้ผู้เรียนได้คิดวิเคราะห์หลักฐานทางประวัติศาสตร์ด้วยตนเองอย่างเปิดกว้าง
+
+          <blockquote className="summary-anim-item opacity-0 my-4 p-4 rounded-xl bg-stone-50 border-l-4 border-stone-400 italic text-stone-800 text-xs sm:text-sm font-sans">
+            "It is stimulating to disagree!"
+            <cite className="block not-italic font-thai-title text-stone-500 font-medium mt-1 text-xs sm:text-sm">
+              — Dr. Stephanie Dalley (ความเห็นต่างทางวิชาการไม่ใช่ปัญหาที่ต้องรีบหาข้อสรุป แต่เป็นแรงผลักดันให้ค้นหาหลักฐานต่อไป)
+            </cite>
+          </blockquote>
+
+          <p className="summary-anim-item opacity-0">
+            World History Encyclopedia เองก็ทิ้งท้ายไว้แบบเปิดกว้างเหมือนกัน — ถ้าทฤษฎีนีเนเวห์ถูกปฏิเสธไปทั้งหมด คำตอบที่เป็นไปได้มากที่สุดอาจอยู่ตรงกลาง คือบาบิโลนอาจมีสวนอยู่จริงในขนาดที่เล็กกว่าตำนาน แล้วเรื่องราวก็ค่อย ๆ พองโตขึ้นตามการเล่าซ้ำหลายชั่วอายุคน ไม่ต่างจากวังโนซอสบนเกาะครีตที่ถูกเล่าจนกลายเป็นเขาวงกตในตำนาน
+          </p>
+
+          <p className="summary-anim-item opacity-0 text-stone-500 text-xs sm:text-sm pt-3 border-t border-stone-100 italic font-thai-title">
+            <strong className="text-stone-800 font-semibold not-italic">คำถามที่ทิ้งไว้ให้คิดต่อ:</strong> ถ้าสวนนี้อยู่ที่นีเนเวห์จริงตามที่จารึกบอก แล้วทำไมโลกยังเรียกมันว่า "แห่งบาบิโลน" มาจนถึงทุกวันนี้
           </p>
         </div>
       </div>
